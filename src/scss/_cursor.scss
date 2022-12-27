@@ -1,0 +1,33 @@
+@use "_base.scss" as b;
+
+.cursor {
+	width: 10px;
+	height: 10px;
+	border: 1px solid b.$text-color;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 9999;
+	transition: 250ms ease-out;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.expand {
+	animation: cursorExpand 500ms forwards;
+	border: 1px solid b.$primary-color
+}
+
+@keyframes cursorExpand {
+	0% {
+		transform: scale(1);
+	}
+	25% {
+		transform: scale(4);
+	}
+	75% {
+		transform: scale(0.25);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

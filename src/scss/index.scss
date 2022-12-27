@@ -1,0 +1,26 @@
+@use "_global.scss";
+@use "_cursor.scss";
+
+.emoji {
+	width: 50px;
+	animation: shm 5s ease-out infinite;
+	
+	&:hover {
+		animation-play-state: paused;
+	}
+}
+
+@keyframes shm {
+	0% {
+		transform: translateY(0);
+	}
+	33% {
+		transform: translateY(7px);
+	}
+	67% {
+		transform: translateY(-7px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

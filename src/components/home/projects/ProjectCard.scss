@@ -1,0 +1,38 @@
+@use "../../../scss/_base.scss" as b;
+
+.projectCard {
+	box-shadow: 0.4rem 0.4rem 0 b.$text-color;
+	border: 1px solid b.$text-color;
+	padding: 1.5rem;
+	border-radius: 2rem;
+	
+	header {
+		p {
+			margin-bottom: 1rem;
+		}
+	}
+	
+	.tech {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+	
+	.links{
+		margin-top: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+	}
+}
+
+@include b.tablet{
+	.projectCard{
+		.tech{
+			gap: 2rem;
+		}
+	}
+}

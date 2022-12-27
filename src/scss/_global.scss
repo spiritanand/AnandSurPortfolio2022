@@ -1,0 +1,86 @@
+@use "_base.scss" as b;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Libre+Baskerville:wght@400;700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: b.$bg-color;
+	color: b.$text-color;
+	height: 100vh;
+	font-family: 'Libre Baskerville', serif;
+	cursor: url("../images/cursor.svg"), auto;
+}
+
+::selection {
+	background: b.$secondary-color;
+}
+
+::-moz-selection {
+	background: b.$secondary-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'League Spartan', sans-serif;
+	background-image: linear-gradient(to right, azure, #e6e8fe, #c2d4ff, #90c3ff, #38b4fc);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 800;
+}
+
+h1 {
+	font-size: 3.5rem;
+}
+
+h2 {
+	font-size: 2.75rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+p {
+	line-height: 1.5rem;
+}
+
+a {
+	font-family: 'League Spartan', sans-serif;
+	color: b.$primary-color;
+	font-weight: 700;
+	text-decoration: none;
+	transition: color 300ms ease-in;
+	
+	&:hover{
+		color: b.$secondary-color;
+	}
+}
+
+main {
+	margin-top: 10rem;
+}
+
+@include b.tablet {
+	h1 {
+		font-size: 7rem;
+		letter-spacing: 0.5rem;
+	}
+	
+	h2 {
+		font-size: 5rem;
+		letter-spacing: 0.35rem;
+	}
+	
+	h3 {
+		font-size: 3.5rem;
+		letter-spacing: 0.25rem;
+	}
+}
+

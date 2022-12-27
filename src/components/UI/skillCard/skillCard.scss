@@ -1,0 +1,9 @@
+@use "../../../scss/_base.scss" as b;
+
+.skillCard{
+	background-color: lighten(b.$bg-color, 10);
+	border-left: 7px b.$primary-color solid;
+	border-radius: 0 0.5rem 0.5rem 0;
+	padding: 1rem;
+	
+}

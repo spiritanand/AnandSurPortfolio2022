@@ -1,0 +1,123 @@
+@use "../../scss/_base.scss" as b;
+
+.navbar.hide {
+	top: -10rem;
+}
+
+.navbar {
+	width: min(500px, 70%);
+	padding: 1rem;
+	margin: 0 auto;
+	position: fixed;
+	top: 1rem;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 2rem;
+	backdrop-filter: blur(15px);
+	border: 1px b.$primary-color solid;
+	z-index: 10;
+	transition: 500ms ease-in-out;
+	transform: translateY(-150%);
+	animation: navbarIn 2s ease-out 15s forwards;
+	
+	.logo {
+		pointer-events: auto;
+		width: max(50px, 5vh);
+		border-radius: 1rem;
+	}
+	
+	ul {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		gap: 0.5rem;
+		padding: 0.5rem;
+		right: 10%;
+		opacity: 0;
+		list-style: none;
+		
+		.navLink {
+			opacity: 0.5;
+			border-bottom: b.$bg-color 1px solid;
+		}
+		
+		.navLink.selected {
+			opacity: 1;
+			border-bottom: b.$secondary-color 2px solid;
+		}
+		
+		a {
+			font-size: 1.25rem;
+			transition: all 250ms ease-in;
+			transition-property: border-bottom, opacity;
+			
+			&:hover {
+				opacity: 0.75;
+				color: b.$primary-color;
+				border-bottom: b.$secondary-color 1px solid;
+			}
+		}
+	}
+	
+	// hamburger menu
+	.menu {
+		position: fixed;
+		right: 10%;
+		width: 3rem;
+		height: 3rem;
+		display: flex;
+		align-items: center;
+		z-index: 1;
+	}
+	
+	.menu-line-wrapper {
+		width: 3rem;
+		height: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		cursor: pointer;
+		overflow: hidden;
+	}
+	
+	.menu-line-wrapper:hover .menu-line-2 {
+		width: 70%;
+	}
+	
+	.menu-line {
+		width: 90%;
+		height: 0.2rem;
+		background-color: b.$primary-color;
+		transform-origin: center;
+		transition: width 0.3s;
+	}
+}
+
+@include b.tablet {
+	.navbar {
+		ul {
+			display: flex;
+			flex-direction: row;
+			gap: 1rem;
+			position: relative;
+			right: 0;
+			opacity: 1;
+		}
+		
+		.menu {
+			display: none;
+		}
+	}
+}
+
+@keyframes navbarIn {
+	from {
+		transform: translateY(-150%);
+	}
+	to {
+		transform: translateY(0%);
+	}
+}

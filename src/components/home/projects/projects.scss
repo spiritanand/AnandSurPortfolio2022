@@ -1,0 +1,32 @@
+@use "../../../scss/_base.scss" as b;
+
+#projects {
+	@include b.contentWrapper(1200px);
+	
+	header {
+		text-align: center;
+		margin-bottom: 2rem;
+		
+		p {
+			max-width: 500px;
+			margin: 0 auto;
+		}
+	}
+	
+	.projectCards{
+		display: flex;
+		flex-flow: column;
+		gap: 2rem;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@include b.tablet{
+	#projects{
+		.projectCards{
+			gap: 4rem;
+			flex-flow: row wrap;
+		}
+	}
+}

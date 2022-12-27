@@ -80,10 +80,10 @@ const projectsContent = [
 function Projects(props) {
   const projectRef = useRef();
   const projectCards = useRef();
-  
+
   useLayoutEffect(() => {
 	const ctx = gsap.context(() => {
-	  
+
 	  // header
 	  gsap.from(".projectHeader", {
 		x            : "-150%",
@@ -96,9 +96,9 @@ function Projects(props) {
 		}
 	  });
 	}, projectRef);
-	
+
 	return () => ctx.revert();
-	
+
   }, []);
   
   return (

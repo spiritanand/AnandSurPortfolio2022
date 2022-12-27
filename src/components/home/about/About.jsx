@@ -45,26 +45,26 @@ function About(props) {
 		}
 	  });
 	  
-	  //  skills
-	  gsap.from(".skills", {
-		x            : "+150%",
+	  skills;
+	  gsap.from(".skillsHeader", {
+		x            : "-150%",
 		opacity      : 0,
 		duration     : 2,
 		scrollTrigger: {
-		  trigger      : ".skills",
+		  trigger      : ".skillsHeader",
 		  start        : "20% 90%",
 		  toggleActions: "restart none none reverse",
 		}
 	  });
 	  
 	  gsap.from(skillCardsRef.current.children, {
-		y            : "+150%",
+		y            : "150%",
 		opacity      : 0,
 		duration     : 3,
 		stagger      : 0.2,
 		scrollTrigger: {
 		  trigger      : ".skillCards",
-		  start        : "35% 90%",
+		  start        : "15% 90%",
 		  toggleActions: "restart none none reverse",
 		}
 	  });
@@ -116,7 +116,7 @@ function About(props) {
 	  
 	  <div className = "skills"
 	  >
-		<h3>
+		<h3 className = "skillsHeader">
 		  Skills <img src = {skillsImg}
 					  alt = "bullsEye"
 					  className = "emoji"

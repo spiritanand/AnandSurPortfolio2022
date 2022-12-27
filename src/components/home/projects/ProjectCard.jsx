@@ -22,10 +22,10 @@ function ProjectCard({project}) {
   
   
   const projectCardRef = useRef();
-  
+
   useLayoutEffect(() => {
 	const ctx = gsap.context(() => {
-	  
+
 	  // card
 	  gsap.from(projectCardRef.current, {
 		y            : "100%",
@@ -37,40 +37,10 @@ function ProjectCard({project}) {
 		},
 	  });
 	  
-	  // header
-	  gsap.from(".projectCardHeader", {
-		x            : "-150%",
-		opacity      : 0,
-		duration     : 2,
-		scrollTrigger: {
-		  trigger      : ".projectCardHeader",
-		}
-	  });
-	  
-	  //  tech
-	  gsap.from(".tech", {
-		opacity      : 0,
-		y            : "100%",
-		duration     : 2,
-		scrollTrigger: {
-		  trigger      : ".tech",
-		}
-	  });
-	  
-	  //  links
-	  gsap.from(".links", {
-		opacity      : 0,
-		x            : "100%",
-		duration     : 2,
-		scrollTrigger: {
-		  trigger      : ".links",
-		}
-	  });
-	  
 	}, projectCardRef);
-	
+
 	return () => ctx.revert();
-	
+
   }, []);
   
   return (

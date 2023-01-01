@@ -24,7 +24,7 @@ function Intro(props) {
 	const options = {
 	  strings   : [
 		"Entrepreneur",
-		"Frontend Developer",
+		"Developer",
 		// " UI + UX Designer",
 		"Learner"
 	  ],

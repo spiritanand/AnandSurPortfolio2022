@@ -5,7 +5,6 @@ import React, {
 } from "react";
 import ReactDOM from "react-dom";
 import logo from "../../images/anandsurlogo.gif";
-import {skills} from "../../scripts/skills.js";
 import "./preloader.scss";
 
 function Preloader(props) {
@@ -37,9 +36,9 @@ function Preloader(props) {
 			duration: 2,
 		  })
 		  .to(skillListRef.current.children, {
-			duration: 8,
-			y       : "-21rem",
-			ease    : "none",
+			duration: 2,
+			y       : "-6rem",
+			ease    : "linear",
 		  })
 		  .to(preloaderRef.current, {
 			zIndex  : "-99999",
@@ -64,11 +63,9 @@ function Preloader(props) {
 	  <div className = "skillList"
 		   ref = {skillListRef}
 	  >
-		{skills.map(skill => (
-		  <span key = {skill}>{skill}</span>
-		))}
-		<span>Developer</span>
 		<span>Entrepreneur</span>
+		<span>Developer</span>
+		{/*<span>Designer</span>*/}
 		<span>ANAND</span>
 		<span>SUR</span>
 	  </div>

@@ -7,7 +7,8 @@ import {
   AiFillGithub,
   BsFillTelephoneOutboundFill,
   BsLinkedin,
-  GrMail
+  GrMail,
+  SiGooglemeet
 } from "react-icons/all.js";
 import A from "../../UI/A.jsx";
 import Hr from "../../UI/Hr/Hr.jsx";
@@ -69,16 +70,19 @@ function Contact(props) {
 		   className = "contactLinks"
 	  >
 		<A href = "https://github.com/spiritmonster/">
-		  <AiFillGithub size = {40}></AiFillGithub>
+		  <AiFillGithub size = {35}></AiFillGithub>
 		</A>
 		<A href = "https://www.linkedin.com/in/anandsur/">
-		  <BsLinkedin size = {40}></BsLinkedin>
+		  <BsLinkedin size = {35}></BsLinkedin>
 		</A>
 		<A href = "mailto:hi@anandsur.com">
-		  <GrMail size = {40}></GrMail>
+		  <GrMail size = {35}></GrMail>
+		</A>
+		<A href = "topmate.io/anandsur?utm_source=topmate&utm_medium=popup&utm_campaign=SocialProfile">
+		  <SiGooglemeet size = {35}/>
 		</A>
 		<A href = "tel:+917032983019">
-		  <BsFillTelephoneOutboundFill size = {40}/>
+		  <BsFillTelephoneOutboundFill size = {35}/>
 		</A>
 	  </div>
 	</section>

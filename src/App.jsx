@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useLayoutEffect} from "react";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -19,7 +19,7 @@ const router = createBrowserRouter(createRoutesFromElements(
 ));
 
 function App(props) {
-  useEffect(() => {
+  useLayoutEffect(() => {
 	const cursor = document.querySelector(".cursor");
 
 // mousemove
@@ -30,8 +30,9 @@ function App(props) {
 
 // scroll
 	document.addEventListener("scroll", (e) => {
+	  console.log(e);
 	  cursor.setAttribute(
-		"style", ``);
+		"style", `top:-100%; left:-100%;`);
 	});
 
 // click events

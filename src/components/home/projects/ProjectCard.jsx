@@ -20,12 +20,11 @@ function ProjectCard({project}) {
 		  live
 		} = project;
   
-  
   const projectCardRef = useRef();
-
+  
   useLayoutEffect(() => {
 	const ctx = gsap.context(() => {
-
+	  
 	  // card
 	  gsap.from(projectCardRef.current, {
 		y            : "100%",
@@ -38,9 +37,9 @@ function ProjectCard({project}) {
 	  });
 	  
 	}, projectCardRef);
-
+	
 	return () => ctx.revert();
-
+	
   }, []);
   
   return (

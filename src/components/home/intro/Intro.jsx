@@ -47,7 +47,7 @@ function Intro(props) {
 		  .from(introRef.current, {
 			x       : "-200%",
 			duration: 3,
-			delay   : 15,
+			delay   : 9,
 		  })
 		  .from(bgRef.current, {
 			opacity : 0,

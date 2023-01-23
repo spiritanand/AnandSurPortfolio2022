@@ -18,7 +18,7 @@ const projectsContent = [
 	],
 	desc  : "Real-time chat app",
 	live  : "https://vaartalapreactchat.web.app/",
-	github: "https://github.com/spiritmonster/Vaartalap",
+	github: "https://github.com/spiritanand/Vaartalap",
   },
   {
 	name  : "Prayogah",
@@ -29,7 +29,7 @@ const projectsContent = [
 	],
 	desc  : "One-stop exercise search + discovery website.",
 	live  : "https://prayogahfitnessmuiapp.web.app/",
-	github: "https://github.com/spiritmonster/Prayogah",
+	github: "https://github.com/spiritanand/Prayogah",
   },
   {
 	name  : "Centrale Dashboard",
@@ -40,7 +40,7 @@ const projectsContent = [
 	],
 	desc  : "Frontend of a dashboard of an e-commerce company.",
 	live  : "https://centralefrontenddashboard.web.app/",
-	github: "https://github.com/spiritmonster/CentraleDashboard",
+	github: "https://github.com/spiritanand/CentraleDashboard",
   },
   {
 	name  : "Cryptochain",
@@ -51,7 +51,7 @@ const projectsContent = [
 	],
 	desc  : "Live news about cryptocurrencies.",
 	live  : "https://cryptochainnews-57d1e.web.app/",
-	github: "https://github.com/spiritmonster/Cryptochain",
+	github: "https://github.com/spiritanand/Cryptochain",
   },
   {
 	name  : "Product Cart",
@@ -63,7 +63,7 @@ const projectsContent = [
 	],
 	desc  : "Sorting and Add to cart feature of an e-commerce site.",
 	live  : "https://productreduxcart.web.app/",
-	github: "https://github.com/spiritmonster/ProductCart",
+	github: "https://github.com/spiritanand/ProductCart",
   },
   {
 	name  : "Vity",
@@ -72,8 +72,8 @@ const projectsContent = [
 	  "JavaScript",
 	],
 	desc  : "A game to add positivity in your life.",
-	live  : "https://spiritmonster.github.io/Vity/",
-	github: "https://github.com/spiritmonster/Vity",
+	live  : "https://spiritanand.github.io/Vity/",
+	github: "https://github.com/spiritanand/Vity",
   }
 ];
 

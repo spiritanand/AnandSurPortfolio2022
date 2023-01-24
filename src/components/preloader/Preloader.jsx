@@ -24,7 +24,7 @@ function Preloader(props) {
 			  opacity : 1,
 			  scale   : 1,
 			  rotation: 360,
-			  duration: 3,
+			  duration: 2,
 			  ease    : "circ"
 			})
 		  .fromTo(skillListRef.current, {
@@ -44,7 +44,7 @@ function Preloader(props) {
 			zIndex  : "-99999",
 			opacity : "0",
 			y       : "-100 %",
-			duration: 3,
+			duration: 1,
 			ease    : "slow",
 		  });
 	}, logoRef, skillListRef);

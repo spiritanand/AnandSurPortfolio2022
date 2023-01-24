@@ -2,12 +2,13 @@ import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import React, {
   useEffect,
-  useLayoutEffect,
   useRef,
   useState
 } from "react";
+import {RiExternalLinkFill} from "react-icons/all.js";
 import {NavLink} from "react-router-dom";
 import logo from "../../images/Favicon.gif";
+import A from "../UI/A.jsx";
 import "./navbar.scss";
 
 
@@ -131,6 +132,11 @@ function Navbar(props) {
 		>
 		  Projects
 		</NavLink>
+		<A href = "https://blog.anandsur.com/"
+		   className = "navLink blogLink"
+		>
+		  Blog <RiExternalLinkFill/>
+		</A>
 		<NavLink to = "/#contact"
 				 onClick = {(e) => executeScroll(e, "contact")}
 				 className = "navLink"

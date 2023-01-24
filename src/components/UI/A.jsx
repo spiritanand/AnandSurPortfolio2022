@@ -2,12 +2,14 @@ import React from "react";
 
 function A({
 			 href,
-			 children
+			 children,
+			 className
 		   }) {
   return (
 	<a href = {href}
 	   target = "_blank"
 	   rel = "noopener noreferrer"
+	   className = {className}
 	>
 	  {children}
 	</a>

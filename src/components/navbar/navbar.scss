@@ -44,6 +44,13 @@
 			border-bottom: b.$bg-color 1px solid;
 		}
 		
+		.blogLink{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 0.25rem;
+		}
+		
 		.navLink.selected {
 			opacity: 1;
 			border-bottom: b.$secondary-color 2px solid;

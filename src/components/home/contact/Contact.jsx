@@ -69,16 +69,16 @@ function Contact(props) {
 	  <div ref = {contactLinks}
 		   className = "contactLinks"
 	  >
-		<A href = "https://github.com/spiritmonster/">
+		<A href = "https://github.com/spiritanand/">
 		  <AiFillGithub size = {35}></AiFillGithub>
 		</A>
-		<A href = "https://www.linkedin.com/in/anandsur/">
+		<A href = "https://www.linkedin.com/in/spiritanand/">
 		  <BsLinkedin size = {35}></BsLinkedin>
 		</A>
 		<A href = "mailto:hi@anandsur.com">
 		  <GrMail size = {35}></GrMail>
 		</A>
-		<A href = "topmate.io/anandsur?utm_source=topmate&utm_medium=popup&utm_campaign=SocialProfile">
+		<A href = "https://topmate.io/spiritanand?utm_source=topmate&utm_medium=popup&utm_campaign=SocialProfile">
 		  <SiGooglemeet size = {35}/>
 		</A>
 		<A href = "tel:+917032983019">

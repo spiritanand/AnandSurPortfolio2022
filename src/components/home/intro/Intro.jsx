@@ -59,7 +59,7 @@ function Intro(props) {
 		  }, ">")
 	  ;
 	}, introRef);
-
+	
 	return () => ctx.revert();
   }, []);
   
@@ -114,7 +114,7 @@ function Intro(props) {
 					 alt = "location"
 					 className = "emoji location"
 		  /></span>
-			Based in Hyderabad, India 🇮🇳.
+			Based in Bengaluru, India 🇮🇳.
 		  </p>
 		</div>
 	  </div>

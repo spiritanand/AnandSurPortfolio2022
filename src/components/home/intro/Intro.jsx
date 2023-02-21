@@ -44,15 +44,15 @@ function Intro(props) {
   useLayoutEffect(() => {
 	const ctx = gsap.context(() => {
 	  gsap.timeline()
+		  .from(bgRef.current, {
+			opacity : 0,
+			duration: 5,
+			delay   : 7,
+		  })
 		  .from(introRef.current, {
 			x       : "-200%",
 			duration: 3,
-			delay   : 7,
-		  })
-		  .from(bgRef.current, {
-			opacity : 0,
-			duration: 3,
-		  }, "-=2")
+		  },"<")
 		  .from(mouseRef.current, {
 			opacity : 0,
 			duration: 3

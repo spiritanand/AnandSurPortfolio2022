@@ -1,10 +1,8 @@
-export const skills =  [
-  "HTML",
-  "CSS",
+export const skills = [
+  "HTML/CSS",
   "SASS",
   "JavaScript",
-  // "TypeScript",
-  "jQuery",
+  "TypeScript",
   "GSAP",
   "React JS",
   // "Next JS",
@@ -12,6 +10,8 @@ export const skills =  [
   // "Framer Motion",
   // "UI + UX",
   // "Figma",
+  "Node JS",
+  "Express",
+  "Mongo DB",
   "Firebase",
-  "Git",
 ];

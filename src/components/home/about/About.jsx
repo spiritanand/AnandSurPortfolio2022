@@ -45,7 +45,7 @@ function About(props) {
 		}
 	  });
 	  
-	  skills;
+	  // skills
 	  gsap.from(".skillsHeader", {
 		x            : "-150%",
 		opacity      : 0,
@@ -95,9 +95,8 @@ function About(props) {
 	  <div className = "desc"
 	  >
 		<p>
-		  I'm a Entrepreneur, Frontend Web Developer and lifelong Learner. I am currently
-		  building my own
-		  start-up <A href = "https://www.linkedin.com/company/sevakpro/">Sevak</A>.
+		  I'm a Problem Solver, Full Stack Developer and lifelong Learner. I am currently
+		  working as a SDE in <A href = "https://avisbudgetgroup.com/">Avis</A>.
 		</p>
 		<p>
 		  Currently, I am learning more about Next Js and UI/UX. I post about my learnings

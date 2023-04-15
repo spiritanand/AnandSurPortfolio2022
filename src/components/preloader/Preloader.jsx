@@ -63,7 +63,7 @@ function Preloader(props) {
 	  <div className = "skillList"
 		   ref = {skillListRef}
 	  >
-		<span>Entrepreneur</span>
+		<span>Technologist</span>
 		<span>Developer</span>
 		{/*<span>Designer</span>*/}
 		<span>ANAND</span>
